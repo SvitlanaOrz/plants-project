@@ -1,0 +1,960 @@
+:root {
+  --main-green-color: #499a18;
+  --main-red-color: #e06733;
+  --main-background-color: #edf2ec;
+  --inika-font-family: "Inika", serif;
+  --inter-font-family: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0 auto;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.green_text {
+  color: var(--main-green-color);
+}
+.red_text {
+  color: var(--main-red-color);
+}
+
+.blur {
+  filter: blur(2px);
+  transition: all 0.5s ease-in-out;
+}
+.display_none {
+  display: none;
+}
+
+.header-backgraund {
+  background: var(--main-background-color);
+}
+nav {
+  padding: 42px 109px 42px 111px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .logo_image {
+  font-family: var(--inika-font-family);
+  font-weight: 400;
+  line-height: 21px;
+  padding-top: 10px;
+}
+
+nav li {
+  list-style: none;
+  display: inline;
+  margin-left: 43px;
+}
+
+nav ul {
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: var(--inika-font-family);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  font-size: 16px;
+  color: #010201;
+}
+
+nav a:hover {
+  color: var(--main-red-color);
+  font-weight: 700;
+}
+
+.welcome_section_backgraund,
+.service_section_backgraund,
+.contacts_section_backgraund {
+  background: var(--main-background-color);
+}
+
+.welcome_section {
+  display: flex;
+  justify-content: space-between;
+  padding: 62px 109px 50px;
+}
+
+.welcome_section .leafs_picture {
+  width: 448.8px;
+  height: 407.36px;
+}
+.welcome_section h1 {
+  color: #717171;
+  font-family: var(--inter-font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 50px;
+  margin: 36px 0 42px 0;
+}
+
+.welcome_section p {
+  color: #636060;
+  font-family: var(--inter-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  margin: 0 0 48px 0;
+}
+.welcome_section .text_in_welcome_section {
+  width: 549px;
+  height: 340px;
+}
+
+.welcome_section button {
+  border: 2px solid var(--main-red-color);
+  border-radius: 10px;
+  font-family: var(--inter-font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 11px 25px;
+  color: #000000;
+}
+.welcome_section button:hover {
+  cursor: pointer;
+  border: 2px solid var(--main-red-color);
+  background-color: var(--main-red-color);
+  color: white;
+}
+
+.about_section {
+  display: flex;
+  justify-content: space-between;
+  padding: 93px 109px;
+}
+
+.about_section .text_in_about_section {
+  width: 605px;
+  height: 350px;
+}
+.about_section h2 {
+  margin: 68px 0 40px 0;
+  font-family: var(--inika-font-family);
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+}
+.about_section p {
+  font-family: var(--inter-font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #636060;
+}
+
+.service_section {
+  background: var(--main-background-color);
+  padding: 40px 109px 70px;
+}
+
+.service_section .service_section_text {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.service_section h2 {
+  width: 306px;
+  height: 94px;
+  font-family: var(--inika-font-family);
+  font-weight: 400;
+  font-size: 40px;
+  margin: 0 140px 0 0;
+}
+.service_section .service_section_button_block {
+  margin-top: 29px;
+  margin-right: 215px;
+}
+
+.service_section button {
+  border: 1px solid var(--main-red-color);
+  border-radius: 5px;
+  font-family: var(--inika-font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  padding: 11px 38px;
+  color: var(--main-red-color);
+  width: 161px;
+}
+.service_section .buttons_hover {
+  background-color: var(--main-red-color);
+  color: white;
+}
+.service_section .first_btn,
+.service_section .second_btn {
+  margin-right: 35px;
+}
+
+.service_section button:hover {
+  cursor: pointer;
+  background-color: var(--main-red-color);
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+.service_section .tablet_images {
+  display: none;
+}
+.service_section .gardens_image,
+.service_section .planting_image,
+.service_section .lawn_image {
+  transition: all 0.5s ease-in-out;
+}
+
+.service_section .service_section_pictures {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 90px;
+}
+.service_section img {
+  display: block;
+}
+.service_section h4,
+.service_section p {
+  text-align: center;
+  font-family: var(--inter-font-family);
+  line-height: 20px;
+}
+
+.service_section h4 {
+  font-weight: 700;
+  font-size: 20px;
+  margin: 10px 0;
+}
+.service_section p {
+  font-weight: 400;
+  color: #717171;
+  margin: 10px 0 36px;
+}
+
+.service_section .image_border {
+  border: 1px solid #e3e1d5;
+  border-radius: 0 0 20px 20px;
+  margin-bottom: 55px;
+}
+
+.prices_section {
+  padding: 40px 109px 115px;
+  display: flex;
+  justify-content: space-between;
+}
+.prices_section h2,
+.prices_section p {
+  font-family: var(--inter-font-family);
+  font-weight: 700;
+  font-size: 40px;
+  color: #000000;
+}
+.prices_section .prices {
+  line-height: 48px;
+  margin: 0 0 60px 0;
+}
+.prices_section .gardeners {
+  line-height: 50px;
+  text-align: right;
+  width: 452px;
+  margin: 0 0 38px 0;
+}
+
+.prices_section .border_block {
+  border: 1px solid #e3e1d5;
+  border-radius: 20px;
+  padding: 34px 41px;
+}
+.prices_section .prices_buttons {
+  display: block;
+  background: var(--main-background-color);
+  border: 1px solid var(--main-background-color);
+  border-radius: 20px;
+  font-family: var(--inter-font-family);
+  padding: 15px 40px;
+  width: 250px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: left;
+}
+/* according options */
+
+.prices_section .accordion_section {
+  background: #d6e7d2;
+  border-radius: 20px;
+  padding: 16px 41px 12px;
+}
+.prices_section .first_accordion_section,
+.prices_section .second_accordion_section {
+  margin-bottom: 32px;
+}
+
+.prices_section .basics_name,
+.prices_section .standart_name,
+.prices_section .pro_care_name {
+  font-family: var(--inter-font-family);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+}
+.prices_section .accordion_text {
+  font-family: var(--inter-font-family);
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 10px;
+  color: #717171;
+  margin-bottom: 5px;
+}
+.prices_section .per_hour {
+  font-family: var(--inter-font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  margin: 0 0 10px;
+}
+.prices_section .price_per_hour {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+.prices_section .order_button {
+  width: 86px;
+  height: 25px;
+  background: #ffffff;
+  border-radius: 10px;
+  color: #717171;
+  font-family: var(--inter-font-family);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  border: 1px solid #ffffff;
+}
+
+.prices_section .basics_button,
+.prices_section .standard_button {
+  margin-bottom: 32px;
+}
+
+.prices_section .width {
+  width: 168px;
+}
+.prices_section button a {
+  text-decoration: none;
+  color: #717171;
+}
+/* according options */
+
+.prices_section .contact_button {
+  border: 1px solid var(--main-red-color);
+  border-radius: 5px;
+  font-family: var(--inika-font-family);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  padding: 11px 33px 11px 29px;
+  color: var(--main-red-color);
+  display: block;
+  margin: 0 0 0 auto;
+  background-color: white;
+}
+.prices_section .contact_button:hover {
+  cursor: pointer;
+  border: 1px solid var(--main-red-color);
+  background-color: var(--main-red-color);
+  color: white;
+}
+
+.prices_section .accordion_btn {
+  float: right;
+}
+
+.prices_section .leafs_picture {
+  width: 152px;
+  height: 174.99px;
+  display: block;
+  margin: 39px 0 0 auto;
+}
+.contacts_section {
+  background: var(--main-background-color);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 53px 109px 0;
+}
+.contacts_section .pictures_contact_woman {
+  width: 400px;
+  height: 496.99px;
+}
+.contacts_section h2 {
+  font-family: var(--inika-font-family);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  margin: 7px 0 0 46px;
+}
+.contacts_section button {
+  background: #d6e7d2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: var(--inter-font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  padding: 5px 35px 5px 20px;
+  margin-top: 95px;
+  width: 450px;
+  height: 50px;
+  border: none;
+  text-align: left;
+  color: #717171;
+}
+.contacts_section button:hover {
+  background: #c1e698;
+  cursor: pointer;
+}
+.contacts_section .accordion_btn {
+  float: right;
+  width: 16px;
+  height: 16px;
+  margin-top: 12px;
+}
+
+.contacts_section button.new_backgraund {
+  background-color: #c1e698;
+}
+
+/* меню */
+
+.contacts_section .accordion_city {
+  width: 381px;
+  background: #d6e7d2;
+  padding: 27px 35px 31px;
+}
+.contacts_section .accordion_city p {
+  font-family: var(--inter-font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  color: #499a18;
+  margin: 0;
+}
+.contacts_section .accordion_city p:hover {
+  color: #717171;
+  border-bottom: 1px solid #717171;
+  cursor: pointer;
+}
+/* меню */
+
+.contacts_section .border_address_container {
+  background: #edf2ec;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  padding: 17px 33px 32px;
+  margin-top: 47px;
+}
+.contacts_section .flex_address_container {
+  display: flex;
+}
+.contacts_section .city_phone_address p {
+  margin-right: 10px;
+  font-family: var(--inter-font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  margin: 0 28px 0 0;
+}
+.contacts_section .city_phone_address_description p {
+  font-family: var(--inter-font-family);
+  font-size: 16px;
+  line-height: 40px;
+  color: #717171;
+  margin: 0 10px 0 0;
+}
+.contacts_section .border_address_container button {
+  border: 1px solid #e06733;
+  border-radius: 5px;
+  width: 122px;
+  height: 26px;
+  font-family: var(--inika-font-family);
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 13px;
+  text-align: center;
+
+  background-color: #edf2ec;
+  display: block;
+  margin: 15px auto 0;
+  box-shadow: none;
+  padding: 7px 30px;
+}
+.contacts_section .border_address_container a {
+  text-decoration: none;
+  color: #717171;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 109px;
+}
+footer .year {
+  margin: 0 20px;
+}
+footer a {
+  text-decoration: none;
+  color: #000000;
+}
+footer span,
+footer a {
+  font-family: var(--inter-font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 50px;
+}
+footer .rsschool {
+  margin-left: 15px;
+}
+
+footer ul {
+  margin: 0;
+  padding: 9px 0;
+}
+
+footer li {
+  list-style: none;
+  display: inline;
+  width: 32px;
+  height: 32px;
+}
+
+footer .pinterest,
+footer .telegram,
+footer .facebook {
+  margin-left: 18px;
+}
+
+@media (max-width: 1305px) {
+  .welcome_section h1 {
+    font-size: 35px;
+    margin: 5px 0 30px 0;
+  }
+  .welcome_section p {
+    font-size: 16px;
+    line-height: 25px;
+    margin: 0 0 35px 5px;
+  }
+  .welcome_section .leafs_picture {
+    width: 280px;
+    height: 254.15px;
+    order: 1;
+    margin-left: 42px;
+  }
+  .welcome_section .text_in_welcome_section {
+    width: 346px;
+    height: 310px;
+  }
+
+  .about_section {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .about_section h2 {
+    margin: 0 0 50px 0;
+    font-size: 35px;
+    line-height: 46px;
+    text-align: center;
+  }
+  .about_section .text_in_about_section {
+    width: auto;
+    height: auto;
+  }
+  .service_section h2 {
+    font-size: 35px;
+    line-height: 46px;
+    margin: 0 0 40px 0;
+  }
+  .service_section .service_section_button_block {
+    margin: 0 0 0 0;
+  }
+  .service_section .service_section_pictures {
+    margin-top: 40px;
+  }
+  .service_section img {
+    width: 280px;
+  }
+  .prices_section {
+    padding: 40px 50px 88px;
+  }
+  .prices_section .prices {
+    font-size: 35px;
+    line-height: 42px;
+    margin: 0 0 56px 14px;
+  }
+  .prices_section .gardeners {
+    line-height: 35px;
+    font-size: 25px;
+    width: 296px;
+    margin: 100px 0 27px 0;
+  }
+  .prices_section .leafs_picture {
+    width: 152px;
+    height: 174.98px;
+    display: block;
+    margin: 34px 0 0 auto;
+  }
+
+  .contacts_section {
+    padding-top: 40px;
+    justify-content: center;
+  }
+  .contacts_section h2 {
+    order: 1;
+    margin: 0;
+  }
+  .contacts_section .accordion_section {
+    order: 2;
+    margin: 0 10px;
+  }
+
+  .contacts_section button {
+    margin: 0;
+  }
+  .contacts_section .pictures_contact_woman {
+    order: 3;
+    width: 200px;
+    height: 248.49px;
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 875px) {
+  nav {
+    padding: 35px 50px;
+  }
+  .welcome_section {
+    padding: 32px 50px 74px;
+  }
+  .about_section {
+    padding: 40px 50px 95px;
+  }
+  .about_section img {
+    width: 250px;
+    height: 258px;
+    margin-top: 41px;
+  }
+  .about_section .text_in_about_section {
+    width: 668px;
+    height: 350px;
+  }
+  .service_section {
+    padding: 60px 50px 35px;
+  }
+  .service_section .tablet_images {
+    display: flex;
+  }
+
+  .service_section .laptop_images {
+    display: none;
+  }
+
+  .service_section p {
+    text-align: center;
+    padding: 0 39px;
+    margin: 10px 0 20px;
+  }
+  .service_section .image_border {
+    width: 280px;
+    margin-bottom: 35px;
+  }
+  .contacts_section .accordion_section {
+    margin: 100px 0 250px;
+    width: 450px;
+  }
+
+  footer {
+    padding: 33px 279px 18px;
+    justify-content: center;
+  }
+  footer span,
+  footer a,
+  footer .rsschool {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  footer .rsschool {
+    display: block;
+    margin: 16px 0px;
+  }
+  footer .pinterest,
+  footer .telegram,
+  footer .facebook {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 735px) {
+  nav {
+    padding: 24px;
+  }
+
+  .welcome_section {
+    padding: 75px 25px 22px;
+  }
+  .welcome_section .leafs_picture {
+    display: none;
+  }
+  .welcome_section .text_in_welcome_section {
+    width: auto;
+    height: auto;
+  }
+  .welcome_section h1 {
+    font-size: 25px;
+    line-height: 35px;
+    margin: 0;
+  }
+  .welcome_section p {
+    font-size: 16px;
+    line-height: 25px;
+    margin: 20px 0 24px;
+  }
+  .welcome_section button {
+    border-radius: 10px;
+    font-size: 10px;
+    padding: 6px 16px;
+  }
+  .welcome_section button:hover {
+    cursor: pointer;
+    border: 2px solid var(--main-red-color);
+    background-color: var(--main-red-color);
+    color: white;
+  }
+  .about_section {
+    padding: 30px 25px 29px;
+  }
+  .about_section .text_in_about_section {
+    width: 605px;
+    height: auto;
+  }
+  .about_section h2 {
+    font-size: 25px;
+    line-height: 33px;
+    margin: 0px 0 15px 0;
+  }
+  .about_section p {
+    font-size: 15px;
+    line-height: 25px;
+    margin: 0;
+  }
+  .about_section img {
+    width: 150px;
+    height: 153px;
+    margin: 0;
+  }
+  .service_section {
+    padding: 30px 25px 0px;
+  }
+  .service_section h2 {
+    font-size: 25px;
+    line-height: 33px;
+    padding-right: 100px;
+    display: block;
+    margin-bottom: 37px;
+    width: auto;
+    height: auto;
+  }
+
+  .service_section button {
+    font-size: 15px;
+    line-height: 20px;
+    padding: 6px 31px;
+    width: 121px;
+  }
+
+  .service_section .first_btn,
+  .service_section .second_btn {
+    margin: 0 7px 10px 0;
+  }
+  .service_section .service_section_pictures {
+    justify-content: center;
+    margin-left: 2px;
+  }
+  .service_section img {
+    margin: 0;
+  }
+
+  .service_section .image_border {
+    margin-bottom: 33px;
+  }
+  .service_section .last_image_border {
+    margin-bottom: 21px;
+  }
+
+  .prices_section {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 25px 0 40px;
+  }
+  .prices_section .prices {
+    font-size: 25px;
+    line-height: 30px;
+    margin: 0 0 37px 0;
+    text-align: center;
+  }
+
+  .prices_section .border_block {
+    padding: 28px 22px;
+  }
+
+  .prices_section .prices_buttons {
+    padding: 14px 40px 14px 30px;
+    width: 180px;
+    height: 50px;
+    font-size: 15px;
+  }
+  .prices_section .accordion_btn {
+    float: right;
+    margin-top: 3px;
+  }
+
+  .prices_section .basics_button,
+  .prices_section .standard_button {
+    margin-bottom: 13px;
+  }
+  .prices_section .leafs_picture {
+    display: none;
+  }
+  .prices_section .gardeners {
+    font-size: 20px;
+    line-height: 35px;
+    width: 230px;
+    margin: 21px 0 20px 0;
+    text-align: center;
+  }
+  .prices_section .contact_button {
+    font-size: 15px;
+    line-height: 20px;
+    padding: 6.5px 23.5px;
+    display: block;
+    margin: 0 auto;
+  }
+  .contacts_section {
+    padding: 25px 0 0 0;
+  }
+  .contacts_section h2 {
+    font-size: 25px;
+    line-height: 33px;
+  }
+
+  .contacts_section .accordion_section {
+    width: 300px;
+    margin: 80px 0 132px 0;
+    order: 2;
+  }
+  .contacts_section button {
+    width: 300px;
+  }
+  .contacts_section .accordion_city {
+    width: 230px;
+  }
+
+  .contacts_section .pictures_contact_woman {
+    width: 100px;
+    height: 124.25px;
+    margin: 0;
+    order: 3;
+  }
+  footer {
+    padding: 22px 85px 7px;
+  }
+  footer ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .burger_menu {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 25px;
+    margin-top: 10px;
+    z-index: 5;
+    position: absolute;
+    right: 25px;
+    transition: all 3s ease-in-out;
+  }
+
+  .burger_menu:before,
+  .burger_menu:after,
+  .burger_menu span {
+    content: " ";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+  }
+  .burger_menu:before {
+    top: 0;
+  }
+
+  .burger_menu:after {
+    bottom: 0;
+  }
+  .burger_menu .first {
+    top: 7px;
+  }
+  .burger_menu .second {
+    top: 15px;
+  }
+  .header_menu {
+    position: fixed;
+    top: -120%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-background-color);
+    padding: 70px 0 0 0;
+    overflow: auto;
+    transition: all 1s ease-in-out;
+  }
+
+  .header_menu li {
+    display: block;
+  }
+  .logo_image {
+    z-index: 5;
+    position: absolute;
+  }
+  .burger_menu.active:before {
+    transform: rotate(50deg);
+    top: 10.5px;
+  }
+  .burger_menu.active:after {
+    transform: rotate(-50deg);
+    bottom: 10.5px;
+  }
+  .burger_menu.active span {
+    transform: scale(0);
+  }
+  .burger_menu.active {
+    transition: all 1s ease-in-out;
+  }
+  .header_menu.active {
+    top: 0;
+    transition: all 1s ease-in-out;
+  }
+}
