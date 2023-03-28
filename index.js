@@ -415,12 +415,3 @@ cityCanandaigua.addEventListener("click", showCanandaiguaInformation);
 cityNewYork.addEventListener("click", showNewYorkInformation);
 cityYonkers.addEventListener("click", showYonkersInformation);
 citySherrill.addEventListener("click", showSherrillInformation);
-
-console.log(
-  `Просьба при проверке задания и появлении разногласий оставлять свой дискорд или оставатся на связи.
-
-  Все пункты задания выполнены.
-  1. При нажатии на кнопки:Gardens,Lawn,Planting происходит смена фокуса на услугах в разделе service +50
-  2. Accordion в секции prices реализация 3-х выпадающих списков об услугах и ценах + 50
-  3. В разделе contacts реализован select с выбором городов +25`
-);
